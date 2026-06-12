@@ -7,7 +7,7 @@ services:
     environment:
       AI_PROVIDER: ${AI_PROVIDER:-local}
     volumes:
-      - /root/data:/app/data
-      - /root/inbox:/app/inbox
-      - /root/processed:/app/processed
+      - /root/spectra/data:/app/data
+      - /root/spectra/inbox:/app/inbox
+      - /root/spectra/processed:/app/processed
     restart: unless-stopped
