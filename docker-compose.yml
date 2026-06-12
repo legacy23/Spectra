@@ -7,7 +7,7 @@ services:
     environment:
       AI_PROVIDER: ${AI_PROVIDER:-local}
     volumes:
-      - ./data:/app/data
-      - ./inbox:/app/inbox
-      - ./processed:/app/processed
+      - /root/data:/app/data
+      - /root/inbox:/app/inbox
+      - /root/processed:/app/processed
     restart: unless-stopped
